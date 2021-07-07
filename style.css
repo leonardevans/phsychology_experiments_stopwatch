@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* 
+ font-family: 'Poppins', sans-serif;
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.main-container{
+    text-align: center;
+}
+
+.home-screen{
+    margin: 4% auto;
+    width: 40%;
+    border: 1px solid #a0aec0;
+    padding: 5px 5px 10px 5px;
+    border-radius: 5px;
+}
+
+.form-input{
+    margin: 3px;
+    padding: 5px;
+}
+
+.field-input{
+    border: 1px solid #a0aec0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.form-input textarea{
+    vertical-align: middle;
+}
+
+.marker{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #a0aec0;
+    width: 40%;
+}
+
+.marker-input-1{
+    background: blanchedalmond;
+}
+
+.marker-input-2{
+    background: pink;
+}
+
+.marker-input-3{
+    background: blue;
+}
+
+.marker-input-4{
+    background: purple;
+}
+
+.last-session{
+    display: flex;
+    flex-direction: row;
+}
+
+.last-session-details{
+    margin: auto;
+}
+
+.session-btn{
+    padding: 10px;
+    cursor: pointer;
+    background: lightseagreen;
+    border: none;
+}
+
+.f-icon{
+    display: flex; 
+    justify-content: space-between;
+    margin: auto;
+    border: 1px solid #a0aec0;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(8, 188, 243);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.f-icon i{
+    margin: 5px;
+}
+
+.f-icon:hover{
+    cursor: default;
+}
+
+.f-icon i:hover{
+    cursor: pointer;
+}
+
+.session-screen{
+    margin: 4% auto;
+    width: 40%;
+    border: 1px solid #a0aec0;
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+}
+
+
+
+
+
+@media (max-width:480px) {
+    .main-container{
+        padding: 10px;
+    }
+
+    .home-screen{
+        width: 100%;
+    }
+
+    .session-screen{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .main-container{
+        padding: 20px;
+    }
+
+    .home-screen{
+        width: 100%;
+    }
+
+    .session-screen{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:1024px) {
+    .main-container{
+        padding: 5px;
+    }
+
+    .home-screen{
+        width: 100%;
+    }
+
+    .session-screen{
+        width: 100%;
+    }
+    
+}
+
+
+
+

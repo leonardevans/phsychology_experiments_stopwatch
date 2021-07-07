@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js.js"></script>
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="home-screen screen">
+            <form action="" id="home-screen-form">
+                <div class="form-input">
+                    <label for="subject-id">Subject ID</label>
+                    <input type="text" class="field-input" id="subject-id" required>
+                </div>
+
+                <div class="form-input">
+                    <label for="description">Description</label>
+                    <textarea name="" rows="2" class="field-input" id="description" required></textarea>
+                </div>
+
+                <div class="form-input">
+                    <label>Edit the text of the marker buttons:</label>
+                    <div class="markers">
+                        <input type="text" class="marker marker-input-1" id="marker-h-1">
+                        <input type="text" class="marker marker-input-2" id="marker-h-2">
+                        <input type="text" class="marker marker-input-3" id="marker-h-3">
+                        <input type="text" class="marker marker-input-4" id="marker-h-4">
+                    </div>
+                </div>
+
+                <div class="form-input">
+                    <input type="checkbox" id="auto-number-trials">
+                    <label for="auto-number-trials">Auto Number Trials</label>
+                </div>
+
+                <div class="form-input">
+                    <input type="submit" value="Start Session" class="session-btn" id="description"/>
+                </div>
+
+            </form>
+
+            <div class="last-session">
+                <div class="last-session-details">
+                    <p>Last session (<span id="last-session-trials">#</span> trials):</p>
+                    <p >Dec 3, 2020 14:33</p>
+                </div>
+
+                <div class="f-icon">
+                    <i class="fa fa-envelope"></i>
+                    <i class="fa fa-download"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="session-screen screen">
+            <form action="" id="session-screen-form">
+                <div class="form-input">
+                    <p>Time since session started: <span id="session-time">12:43:00</span></p>
+                </div>
+
+                <div class="form-input">
+                    <p>Trials completed: <span id="session-trials-completed">0</span></p>
+                </div>
+    
+                <div class="form-input">
+                    <label for="trial-number">Trial #</label>
+                    <input type="number" required class="field-input" id="trial-number">
+                </div>
+    
+                <div class="form-input">
+                    <label for="trial-info">Trial info</label>
+                    <textarea name="" id="trial-info" rows="2" class="field-input"></textarea>
+                </div>
+    
+                <div class="form-input">
+                    <label >Measurement is: </label>
+                    <input type="radio" name="measurement" value="ok" id="measurement-ok" checked/> Ok
+                    <input type="radio" name="measurement" value="incorrect"/> Incorrect
+                </div>
+
+                <div class="form-input">
+                    <h4 id="trial-time">00:00:00</h4>
+                </div>
+    
+                <div class="form-input" id="markers-section">
+                    <p><span id="marker-time">00:00:00</span> since marker <span id="marker-num">0</span> at <span id="marker-session-time">00:00:00</span></p>
+                    <p>Markers already created: <span id="markers-already-created"></span></p>
+                </div>
+    
+                <div class="form-input">
+                    <input type="submit" value="Start Trial" id="trial-control-btn" class="session-btn">
+                </div>
+    
+                <div class="form-input">
+                    <div class="markers">
+                        <input type="text" data-markernum="1" class="marker marker-input-1 session-marker" id="marker-s-1">
+                        <input type="text" data-markernum="2" class="marker marker-input-2 session-marker" id="marker-s-2">
+                        <input type="text" data-markernum="3" class="marker marker-input-3 session-marker" id="marker-s-3">
+                        <input type="text" data-markernum="4" class="marker marker-input-4 session-marker" id="marker-s-4">
+                    </div>
+                </div>
+    
+                <div class="form-input">
+                    <input type="button" value="End Session" id="end-session-btn" class="session-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
